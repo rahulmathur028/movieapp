@@ -1,83 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.navbar{
-    background-color:#032541 ;
-}
-
-#textcolor{
-    color: white;
+.navbar {
+  background-color: #032541;
 }
 
-#jointmdb{
-    overflow: hidden;
-    white-space: nowrap;
-}
-#rightnavlist1{
-    font-size: 28px;
-    font-weight: 900;
-    margin-top: -8px;
-}
-.rightnav{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-   list-style: none;
-   font-size: 15px;
-   font-weight: 700;
-   /* margin-top: 5px; */
-   /* border: 1px solid white; */
-}
-.rightnavlist{
-
-   margin-right: 30px;
+#textcolor {
+  color: white;
 }
 
-.rightnavcontent{
-    margin-top: 10px;
+#jointmdb {
+  overflow: hidden;
+  white-space: nowrap;
+}
+#rightnavlist1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: -8px;
+}
+.rightnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 700;
+  /* margin-top: 5px; */
+  /* border: 1px solid white; */
+}
+.rightnavlist {
+  margin-right: 30px;
 }
 
-.buttonborder{
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 2px;
+.rightnavcontent {
+  margin-top: 10px;
 }
 
-.container{
-    width: 95%;
-    margin:1em auto ;
+.buttonborder {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 2px;
 }
 
-.moviecard{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 0.5em;
-   text-align: center;
+.container {
+  width: 95%;
+  margin: 1em auto;
 }
 
-.overlay{
+.moviecard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.5em;
+  text-align: center;
+}
 
-    display: flex;
+.overlay {
+  display: flex;
   flex-direction: column;
-overflow: hidden;
-    align-items: center;
-    color: black;
-    border: 2px solid royalblue;
-    border-radius: 10px;
-    padding: 5px;
-    font-weight: 700;
-    width: 100%;
-    height: 100%;
-    margin-top: 10px;
+  overflow: hidden;
+  align-items: center;
+  color: black;
+  border: 2px solid royalblue;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
 
-    }
+.Pagination {
+    cursor: pointer;
+  display: inline-block;
+  margin: 1em 0;
+  margin-left: 32em;
+}
 
-   
+.Pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.Pagination a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.Pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
